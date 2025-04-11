@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import {Funnel_Display} from 'next/font/google'
-import Provider from "./Provider";
+import Provider from "./provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "../components/ui/sonner"
 // import Footer from "./_components/Footer"
