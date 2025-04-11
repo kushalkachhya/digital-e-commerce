@@ -1,5 +1,4 @@
 "use client"
-import ProductDetail from "./ProductDetail";
 import axios from "axios";
 import Image from "next/image";
 import { useParams } from "next/navigation";
