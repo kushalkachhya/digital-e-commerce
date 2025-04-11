@@ -8,7 +8,8 @@ interface Props {
 }
 
 export default function EmailPreview({ params }: Props) {
-    let emailMarkup: '';
+  let emailMarkup: string = "";
+
 
   if (params.slug === 'welcome-email') {
     emailMarkup = await render(<WelcomeEmail />);
