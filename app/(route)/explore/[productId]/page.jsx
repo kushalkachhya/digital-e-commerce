@@ -19,8 +19,7 @@ import { MoreVerticalIcon } from "lucide-react";
 import { useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
-function ProductDetail() {
-    const editable = false;
+function ProductDetail({ editable }) {
     const { productId } = useParams();
     const [product, setProduct] = useState();
     const { cart, setCart } = useContext(CartContext);
@@ -100,4 +99,6 @@ function ProductDetail() {
     )
 }
 
-export default ProductDetail
+export default function Page() {
+    return <ProductDetail editable={false} />;
+  }
