@@ -1,4 +1,5 @@
 "use client"
+import ProductDetail from "./ProductDetail";
 import axios from "axios";
 import Image from "next/image";
 import { useParams } from "next/navigation";
@@ -19,7 +20,8 @@ import { MoreVerticalIcon } from "lucide-react";
 import { useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
-function ProductDetail({ editable }) {
+function ProductDetail() {
+    const editable = false;
     const { productId } = useParams();
     const [product, setProduct] = useState();
     const { cart, setCart } = useContext(CartContext);
